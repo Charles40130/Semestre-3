@@ -95,5 +95,40 @@ teteListe viderListe(teteListe maListe){
     maListe=supprimerDebut(maListe);
     return viderListe(maListe->suivant);
   }
+}
+
+int chercherElt(teteListe maListe, int donnee,int pos){
+  if(maListe==NULL){
+    return -1;
+  }else{
+    if(donnee==maListe->donnee){
+      return pos;
+    }else{
+      return chercherElt(maListe->suivant,donnee,pos+1);
+    }
+  }
+}
+
+teteListe supprVal(teteListe maListe, int donnee){
+  int pos;
+  pos=chercherElt(maListe,donnee,1);
+  if (pos<0){
+    printf("La valeur ne se trouve pas dans la liste \n");
+    return maListe;
+  }else{
+    maListe=supprimerPos(maListe,pos);
+    return maListe;
+  }
+}
+
+teteListe supprValDoublons(teteListe maListe, int donnee){
+  if(maListe==NULL){
+    return maListe;
+  }else{
+    supprVal(teteListe maListe, int donnee)
+
+    }
+
+  }
 
 }

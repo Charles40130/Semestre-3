@@ -5,6 +5,7 @@
 
 int main(){
  printf("Voici le TP3 \n");
+ int test;
 
  teteListe l=NULL;
  l=ajouterTete(l,10);
@@ -29,7 +30,12 @@ afficher(l);
 l=supprimerPos(l,2);
 afficher(l);
 
-l=vider(l);
+//l=viderListe(l);
+//afficher(l);
+l=supprVal(l,5);
+afficher(l);
+
+l=supprVal(l,2);
 afficher(l);
   return 0;
 }

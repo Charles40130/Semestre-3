@@ -72,12 +72,29 @@ teteListe supprimerPos(teteListe maListe,int pos);
             la valeur est passée en paramètre  */
 /* Entrée(s) :  une tete de liste et la valeur*/
 /* Sortie(s) :  la nouvelle liste */
-//teteListe supprVal(teteListe maListe, TYPE val);
+teteListe supprVal(teteListe maListe, int val);
 
 
-/* Auteur : xxxxxx */
+/* Auteur : Charles Mendiburu */
+/* Date : xxxxx */
+/* Entrees :  une tete de liste */
+/* Sorties :  une tete de liste */
+/* Résumé :  Chercher la position d'un élément dans une liste */
+int chercherElt(teteListe maListe, int donnee,int pos);
+
+
+/* Auteur : Charles Mendiburu */
 /* Date : xxxxx */
 /* Entrees :  une tete de liste */
 /* Sorties :  une tete de liste */
 /* Résumé :  supprime le contenu de la liste chaînée */
 teteListe viderListe(teteListe maListe);
+
+
+/* Auteur : Charles Mendiburu  */
+/* Date : 9 oct 2023 */
+/* Résumé :  fonction permettant de supprimer tous les maillons dont
+             la valeur est passée en paramètre  */
+/* Entrée(s) :  une tete de liste et la valeur*/
+/* Sortie(s) :  la nouvelle liste */
+teteListe supprValDoublons(teteListe maListe, int donnee);
